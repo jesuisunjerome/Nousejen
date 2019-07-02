@@ -174,5 +174,6 @@ footer span a:hover {
 
     #carousel .carousel-inner {
         height: 100vh;
+        text-align: center;
     }
 }
