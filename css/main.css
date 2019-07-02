@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+#entete {
+    background: url('../images/encabezado.png') center center;
+    background-size: cover;
+    height: 50px;
+}
+
+#navbar {
+    top: 50px;
+
+}
+*/
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.miColor {
+    color: #fc3;
+    font-weight: bold;
+}
+
+nav {
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.customPadding {
+    padding-top: 3.5rem;
+}
+
+footer a i.fab:hover {
+    color: #fc3;
+    transition: .4s ease-in-out;
+}
+
+footer span a:hover {
+    color: #fc3;
+}
+
+
+/*Accueil*/
+#ima1 {
+    background: url('../images/blooming-blur-close-up-459059.jpg') center center;
+    background-size: cover;
+}
+
+#ima2 {
+    background: url('../images/forest-light-nature-70365.jpg') center center;
+    background-size: cover;
+}
+
+#ima3 {
+    background: url('../images/care-caregiver-deal-45842.jpg') center center;
+    background-size: cover;
+}
+
+.video-fluid {
+    width: 100%;
+    height: auto;
+}
+
+#sidebar {
+    position: fixed;
+}
+
+#carousel h1 {
+    font-family: fantasy;
+    text-shadow: 2px 2px #000;
+}
+
+#environnement {
+    background: url('../images/art-background-blank-1020317.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000;
+    height: 100%;
+}
+
+#sport {
+    background: url('../images/active-activity-athletes-1667583.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000;
+    height: 100%;
+}
+
+#education {
+    background: url('../images/art-art-materials-background-1762851.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000;
+    height: 100%;
+}
+
+
+
+/*Activités*/
+#accordionExample275 {
+    min-height: 50vh;
+}
+
+#accordionExample275 .list-group button {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#accordionExample275 .list-group button:hover,
+#accordionExample275 .list-group button:active {
+    background: #007bff;
+    color: #fff;
+}
+
+#accordionExample275 .collapse {
+    transition: .5s ease-in-out;
+}
+
+
+
+
+/*Contact*/
+#mapa {
+    overflow: hidden;
+    padding: 0;
+}
+
+#mapa #mapaContenedor {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+}
+
+#mapa iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.contact {
+    top: -90px;
+}
+
+.contact .card {
+    height: 400px;
+}
+
+.contact .card:hover i {
+    color: #fc3;
+    transition: .4s ease-in-out;
+}
