@@ -129,7 +129,23 @@ footer span a:hover {
     transition: .5s ease-in-out;
 }
 
+#accordionExample275 h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
+.card-columns img {
+    transition: all .3s ease-in-out;
+}
+
+.card-columns:hover img {
+    transform: rotate(1deg);
+}
+
+.card-columns img:hover {
+    opacity: .5;
+    transform: scale(.91);
+}
 
 
 /*Contact*/
