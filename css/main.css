@@ -162,3 +162,17 @@ footer span a:hover {
     color: #fc3;
     transition: .4s ease-in-out;
 }
+
+
+/*Media queries*/
+@media (max-width: 768px) {
+    #carousel h2 {
+        text-shadow: 2px 2px #000;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #carousel .carousel-inner {
+        height: 100vh;
+    }
+}
