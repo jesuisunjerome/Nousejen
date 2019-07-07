@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    /*scroll-behavior: smooth;*/
+}
+
+/*html {
+    scroll-behavior: smooth;
+}*/
+
+.sec {
+    position: relative;
+    background-color: #fc3;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 3px 10px 0 rgba(22, 12, 1, .5);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav .logo {
+    height: 40px;
+    width: 20%;
+    display: inline-block;
+}
+
+nav .logo a {
+    color: #fff;
+}
+
+nav .opciones {
+    width: 79%;
+    display: inline-block;
+    text-align: right;
+}
+
+nav ul {
+    margin: 5px 2px;
+    padding: 10px 0;
+}
+
+nav ul li {
+    padding: 10px 0;
+    display: inline-block;
+    transition: all .5s ease-in-out;
+    border-radius: 100px;
+}
+
+nav ul li:hover {
+    background: #000;
+}
+
+nav ul li a {
+    padding: 0 10px;
+    margin: 0 15px;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #fc3;
+}
+
+.sec .texto-entrada {
+    margin: 20vh 0;
+    text-align: center;
+}
+
+.sec .texto-entrada h1 {
+    display: inline-block;
+    padding: 20px;
+    font-size: 4rem;
+}
+
+.sec .texto-entrada h1 span {
+    transition: all .5s ease-in-out;
+}
+
+.sec .texto-entrada .span-titulo-entrada1 {
+    color: #fc3;
+    background: #000;
+    padding: 15px 0 15px 15px;
+    margin-right: -7px;
+}
+
+.sec .texto-entrada .span-titulo-entrada2 {
+    color: #000;
+    background: #fc3;
+    padding: 15px 15px 15px 0;
+    margin-left: -7px;
+}
+
+.sec .texto-entrada h1:hover > .span-titulo-entrada1 {
+    color: #000;
+    background: #fc3;
+    transition: .4s ease-in-out;
+
+}
+
+.sec .texto-entrada h1:hover > .span-titulo-entrada2 {
+    color: #fc3;
+    background: #000;
+    transition: .5s ease-in-out;
+
+}
+
+.sec .texto-entrada h1 ~ .parrafo-entrada {
+    transition: all .9s ease-in-out;
+}
+
+.sec .texto-entrada p {
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+}
+
+.sec .texto-entrada h1:hover ~ .parrafo-entrada {
+    color: #cdcdcd;
+    transition: all .9s ease-in-out;
+
+}
+
+#uno {
+    background: url('../images/art-art-materials-background-1762851.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sesgouno {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 15vh 0 0 100vw;
+    border-style: solid;
+    border-color: transparent #fc3;
+}
+
+
+#dos .images {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+#dos .image1 {
+    width: 30%;
+    padding: 20px 0;
+}
+
+#dos .image1 img {
+    width: 90%;
+    opacity: .7;
+}
+
+#dos .image1 img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+#tres {
+    background: url('../images/art-art-materials-background-1762851.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sesgotres {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 15vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fc3 transparent;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width:900px) {
+    nav {
+        font-size: 1rem;
+    }
+
+    nav .logo {
+        width: 10%;
+    }
+
+    nav .opciones {
+        width: 89%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    nav {
+        font-size: 1rem;
+    }
+
+    nav .logo {
+        display: none;
+    }
+
+    nav .opciones {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .opciones li {
+        display: block;
+        min-width: 100%;
+        margin-bottom: 10px;
+        box-shadow: 1px 0 5px rgba(0, 0, 0, .5);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .sec .texto-entrada {
+        margin: 50vh 0;
+        text-align: center;
+    }
+
+    .sec .text-entrada h1 {
+        font-size: 2rem;
+    }
+}
