@@ -12,13 +12,12 @@
 
          <link rel="shortcut icon" href="" type="image/x-icon">
          <link rel="apple-touch-icon" href="">
-         <link rel="stylesheet" href="css/hver.css">
-         <link rel="stylesheet" href="css/alerts.css">
-         <link rel="stylesheet" href="css/icono.min.css">
+         <link href="https://fonts.googleapis.com/css?family=Teko|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
          <link rel="stylesheet" href="css/lightbox.css">
          <link rel="stylesheet" href="css/bootstrap.min.css">
          <link rel="stylesheet" href="css/mdb.min.css">
+         <link rel="stylesheet" href="css/aos.css">
          <!-- Link to your css file -->
          <link rel="stylesheet" href="css/main.css">
      </head>
@@ -26,22 +25,15 @@
      <body>
          <!-- Start coding here -->
 
-         <!--
-    <header id="entete" class="navbar scrolling-navbar sticky-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 py-5"> </div>
-            </div>
-        </div>
-    </header>
-    -->
-
          <!--Navbar-->
-         <nav class="navbar navbar-expand-md navbar-dark bg-dark scrolling-navbar fixed-top" id="navbar">
+         <nav class="navbar navbar-expand-md teal lighten-4 scrolling-navbar fixed-top" id="navbar" data-aos="fade-down" data-aos-duration="1000">
              <div class="container">
-                 <a class="navbar-brand" href="index.html">Nousejen</a>
-                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
+                 <a class="navbar-brand" href="index.html">
+                     <img src="images/NOUSEJEN.png" alt="Logo NOUSEJEN" height="50">
+                     NOUSEJEN
+                 </a>
+                 <button class="navbar-toggler miMenu" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                     <div class="animated-icon1"><span></span><span></span><span></span></div>
                  </button>
                  <div class="collapse navbar-collapse" id="navbarResponsive">
                      <ul class="navbar-nav ml-auto">
@@ -55,7 +47,7 @@
                              <a class="nav-link" href="activites.html">Activités<span class="sr-only">(current)</span></a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link" href="#">A propos</a>
+                             <a class="nav-link" href="a-propos.html">A propos</a>
                          </li>
                          <li class="nav-item">
                              <a class="nav-link" href="contact.html">Contact</a>
@@ -66,18 +58,18 @@
          </nav>
 
          <!-- Contenu -->
-         <div class="container customPadding mb-3">
+         <div class="container customPadding mb-3" data-aos="fade-up" data-aos-duration="1000">
 
              <div class="row my-4 accordion" id="accordionExample275">
 
                  <!-- Activites -->
                  <div class="col-md-4 my-3">
                      <div class="list-group">
-                         <button href="#" id="headingOne2" type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2" class="list-group-item list-group-item-action collapsed">Coin des jeunes</button>
-                         <button href="#" id="headingTwo2" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2" class="list-group-item list-group-item-action collapsed">Nousejeni</button>
-                         <button href="#" id="headingThree2" type="button" data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2" class="list-group-item list-group-item-action collapsed">Kreyolololo</button>
-                         <button href="#" id="headingFour4" type="button" data-toggle="collapse" data-target="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4" class="list-group-item list-group-item-action collapsed">Nousejen Prefac</button>
-                         <button href="#" id="headingFive5" type="button" data-toggle="collapse" data-target="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5" class="list-group-item list-group-item-action collapsed">Clinique mobile</button>
+                         <button href="#" id="headingOne2" type="button" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2" class="list-group-item list-group-item-action collapsed" data-aos="fade-up" data-aos-duration="1500">Coin des jeunes</button>
+                         <button href="#" id="headingTwo2" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2" class="list-group-item list-group-item-action collapsed" data-aos="fade-up" data-aos-duration="1500">Nousejeni</button>
+                         <button href="#" id="headingThree2" type="button" data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2" class="list-group-item list-group-item-action collapsed" data-aos="fade-up" data-aos-duration="1500">Kreyolololo</button>
+                         <button href="#" id="headingFour4" type="button" data-toggle="collapse" data-target="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4" class="list-group-item list-group-item-action collapsed" data-aos="fade-up" data-aos-duration="1500">Nousejen Prefac</button>
+                         <button href="#" id="headingFive5" type="button" data-toggle="collapse" data-target="#collapseFive5" aria-expanded="false" aria-controls="collapseFive5" class="list-group-item list-group-item-action collapsed" data-aos="fade-up" data-aos-duration="1500">Clinique mobile</button>
                      </div>
                  </div>
 
@@ -85,51 +77,75 @@
                  <!-- Description -->
                  <div class="col-md-8 my-3">
                      <div id="collapseOne2" class="show" aria-labelledby="headingOne2" data-parent="#accordionExample275">
-                         <h4>Coin des jeunes</h4>
+                         <h4 data-aos="fade-up" data-aos-duration="1500">Coin des jeunes</h4>
                          <hr>
-                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                         wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                         eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                         assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                         nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                         farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                         labore sustainable.
+                         <div data-aos="fade-up" data-aos-duration="1800">
+                             La NOUSEJEN, dans sa mission d'apporter un soutien sous le plan socio-éducatif et culturel aux jeunes Carrefourois en particulier et aux jeunes du Pays en général, entame depuis Janvier 2017 une série de conférence-débat baptisée "Coin des jeunes".
+                             <p class="mt-3">
+                                 Cette activité à caractère socio-éducatif vise à:
+                             </p>
+
+                             <ul class="pl-5">
+                                 <li>
+                                     Faciliter la capacité discursive des Jeunes.
+                                 </li>
+                                 <li>
+                                     Développer en eux l'esprit de tolérance.
+                                 </li>
+                                 <li>
+                                     Débattre des sujets qui sont considérés comme étant tabous dans notre société.
+                                 </li>
+                                 <li>
+                                     Contribuer dans la production et dans la divulgation de réflexion sur divers sujets.
+                                 </li>
+                             </ul>
+                             <p>
+                                 Pas mal de personnalités publiques se sont défilées sous la table de coin des jeunes. Citons à titre d'exemple: M. Daniel Supplice (Ancien Ministre des affaires étrangères et Ancien Ambassadeur), M. Franck Séguy (Professeur d'Université), Mme Florence J.L Dupuy(Actrice), Atros(Artiste Engagé), M.D'Angelo Néard (Journaliste).
+                             </p>
+                             <p>
+                                 Chaque deux(2) vendredis de chaque mois, les jeunes sont attendus à Au coin d'Or restaurant situé à Mahotiere 77, Carrefour, Haïti pour cette aventure Cognitive.
+                             </p>
+                             <p>
+                                 Rappelons que cette activité, supportée par Au coin d'or restaurant, est à but non lucratif, cependant elle nécessite des appuis en nature et en espèce pour sa pleine réalisation.
+                             </p>
+                         </div>
                      </div>
 
                      <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordionExample275">
-                         <h4>Nousejeni</h4>
+                         <h4 data-aos="fade-up" data-aos-duration="1500">Nousejeni</h4>
                          <hr>
-                         <h6 class="d-inline-block">Nousejeni</h6> est une iniciative socio-&eacute;ducative prise par la <a href="#">NOUSEJEN</a> dans l'ultime but de faire valoir la capacit&eacute; intellecctuelle des jeunes &eacute;coliers et &eacute;coli&egrave;res de la commune de Carrefour tout en facilitant une relation saine et fraternelle entres les diff&eacute;ntes &eacute;coles de la commune.
-                         <br><br>
-                         <p>
-                             Cette activit&eacute; s'inscrit aussi dans une d&eacute;arche cognitive pouvant faciliter aux &eacute;l&egrave;ves, l'applicabilit&eacute; de quelques notions non enseign&eacute;es &agrave; l'&eacute;cole.
-                         </p>
-                         <p>
-                             Particip&eacute; &agrave; NOUSEJENI, c'est contribu&eacute; dans la formation de nouveaux citoyens. En bref, c'est support&eacute; l'Ha&iuml;ti de demain &agrave; travers ces jeunes.
-                         </p>
-
+                         <div data-aos="fade-up" data-aos-duration="1800">
+                             <h6 class="d-inline-block">Nousejeni</h6> est une iniciative socio-&eacute;ducative prise par la <a href="a-propos.html">NOUSEJEN</a> dans l'ultime but de faire valoir la capacit&eacute; intellecctuelle des jeunes &eacute;coliers et &eacute;coli&egrave;res de la commune de Carrefour tout en facilitant une relation saine et fraternelle entres les diff&eacute;ntes &eacute;coles de la commune.
+                             <br><br>
+                             <p>
+                                 Cette activit&eacute; s'inscrit aussi dans une d&eacute;marche cognitive pouvant faciliter aux &eacute;l&egrave;ves, l'applicabilit&eacute; de quelques notions non enseign&eacute;es &agrave; l'&eacute;cole.
+                             </p>
+                             <p>
+                                 Particip&eacute; &agrave; NOUSEJENI, c'est contribu&eacute; dans la formation de nouveaux citoyens. En bref, c'est support&eacute; l'Ha&iuml;ti de demain &agrave; travers ces jeunes.
+                             </p>
+                         </div>
                          <div class="card-columns">
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Nousejeni/IMG_8180.JPG.jpeg" data-lightbox="gallery1">
                                      <img src="images/Nousejeni/IMG_8180.JPG.jpeg" class="card-img-top" alt="">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Nousejeni/IMG_8183.JPG.jpeg" data-lightbox="gallery1">
                                      <img src="images/Nousejeni/IMG_8183.JPG.jpeg" class="card-img-top" alt="">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Nousejeni/IMG_8192.JPG.jpeg" data-lightbox="gallery1">
                                      <img src="images/Nousejeni/IMG_8192.JPG.jpeg" class="card-img-top" alt="">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Nousejeni/IMG_8198.JPG.jpeg" data-lightbox="gallery1">
                                      <img src="images/Nousejeni/IMG_8198.JPG.jpeg" class="card-img-top" alt="">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Nousejeni/IMG_8208.JPG.jpeg" data-lightbox="gallery1">
                                      <img src="images/Nousejeni/IMG_8208.JPG.jpeg" class="card-img-top" alt="">
                                  </a>
@@ -138,77 +154,78 @@
                      </div>
 
                      <div id="collapseThree2" class="collapse" aria-labelledby="headingThree2" data-parent="#accordionExample275">
-                         <h4>Kreyolololo</h4>
+                         <h4 data-aos="fade-up" data-aos-duration="1500">Kreyolololo</h4>
                          <hr>
-                         La journée internationale de la Langue et de la Culture Créole est célébrée tous les 28 Octobres de chaque année dans les pays Créolophones comme: Seychelles, Guadeloupe, Martinique, Île Maurice, Haïti. En ce sens, la NOUSEJEN initie depuis l'année dernière (2018) une série d'activité visant à marquer cette date qui met en exergue les éléments constitutifs faisant de nous de vrais Créoles.
-                         <br><br>
+                         <div data-aos="fade-up" data-aos-duration="1800">
+                             La journée internationale de la Langue et de la Culture Créole est célébrée tous les 28 Octobres de chaque année dans les pays Créolophones comme: Seychelles, Guadeloupe, Martinique, Île Maurice, Haïti. En ce sens, la NOUSEJEN initie depuis l'année dernière (2018) une série d'activité visant à marquer cette date qui met en exergue les éléments constitutifs faisant de nous de vrais Créoles.
+                             <br><br>
 
-                         <p>Sous la dénomination de "Kreyolololo", titre d'une musique chantée par Chantal Drice, une haitiano-Canadienne qui encourage, à travers ce tube, une harmonisation fraternelle pouvant pérenniser les valeurs Créoles, la NOUSEJEN organise un weekend d'activité qui commence d'abord par une conférence débat, un moment de réflexion et d'échange sur ce qui concerne le Créole ensuite, une foire gastro-artisanale où sont exposés les mets et les produits typiquement créoles et enfin une soirée baptisée " Koudjay kiltirèl " qui est une soirée où les musiques créoles en générale et, particulièrement, celles d'Haïti sont chantées, dansées par les amoureux du Créole.
-                         </p>
-                         <p>
-                             Rappelons que le Créole comme langue, constitue un des éléments qui nous unis, il est notre identité, celui qui facilite l'interconnexion entre les Citoyens Créolophones en dépit des diverses variations qui le constitue; comme culture, il est cet élément qui nous permet, en restant sur notre territoire, de traverser les frontières pour atteindre les aimants de la Culture Créole.
-                         </p>
-                         <p>
-                             Contribuer dans la réalisation de cette activité annuelle, "Kreyolololo", pourrait être une bouffe d'oxygène pouvant faciliter la pérennisation de la langue et de la culture Créole en Haïti principalement.
-                         </p>
-
+                             <p>Sous la dénomination de "Kreyolololo", titre d'une musique chantée par Chantal Drice, une haitiano-Canadienne qui encourage, à travers ce tube, une harmonisation fraternelle pouvant pérenniser les valeurs Créoles, la NOUSEJEN organise un weekend d'activité qui commence d'abord par une conférence débat, un moment de réflexion et d'échange sur ce qui concerne le Créole ensuite, une foire gastro-artisanale où sont exposés les mets et les produits typiquement créoles et enfin une soirée baptisée " Koudjay kiltirèl " qui est une soirée où les musiques créoles en générale et, particulièrement, celles d'Haïti sont chantées, dansées par les amoureux du Créole.
+                             </p>
+                             <p>
+                                 Rappelons que le Créole comme langue, constitue un des éléments qui nous unis, il est notre identité, celui qui facilite l'interconnexion entre les Citoyens Créolophones en dépit des diverses variations qui le constitue; comme culture, il est cet élément qui nous permet, en restant sur notre territoire, de traverser les frontières pour atteindre les aimants de la Culture Créole.
+                             </p>
+                             <p>
+                                 Contribuer dans la réalisation de cette activité annuelle, "Kreyolololo", pourrait être une bouffe d'oxygène pouvant faciliter la pérennisation de la langue et de la culture Créole en Haïti principalement.
+                             </p>
+                         </div>
                          <div class="card-columns">
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/IMG_7876.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/IMG_7876.JPG.jpeg" class="card-img-top" alt="">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/DSC_0031.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/DSC_0031.JPG.jpeg" class="card-img-top" alt="">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/DSC_0224.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/DSC_0224.JPG.jpeg" class="card-img-top" alt="">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/DSC_0227.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/DSC_0227.JPG.jpeg" class="card-img-top" alt="">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/DSC_0230.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/DSC_0230.JPG.jpeg" class="card-img-top" alt="...">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/IMG_7864.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/IMG_7864.JPG.jpeg" class="card-img-top" alt="">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/IMG_7874.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/IMG_7874.JPG.jpeg" class="card-img-top" alt="">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/IMG_7878.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/IMG_7878.JPG.jpeg" class="card-img-top" alt="...">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/IMG_7880.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/IMG_7880.JPG.jpeg" class="card-img-top" alt="...">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/IMG_7886.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/IMG_7886.JPG.jpeg" class="card-img-top" alt="...">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/IMG_7897.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/IMG_7897.JPG.jpeg" class="card-img-top" alt="...">
                                  </a>
                              </div>
-                             <div class="card">
+                             <div class="card" data-aos="fade-up" data-aos-duration="1500">
                                  <a href="images/Kreyolololo/IMG_7920.JPG.jpeg" data-lightbox="gallery">
                                      <img src="images/Kreyolololo/IMG_7920.JPG.jpeg" class="card-img-top" alt="...">
                                  </a>
@@ -217,34 +234,38 @@
 
                      </div>
                      <div id="collapseFour4" class="collapse" aria-labelledby="headingFour4" data-parent="#accordionExample275">
-                         <h4>Nousejen Prefac</h4>
+                         <h4 data-aos="fade-up" data-aos-duration="1500">Nousejen Prefac</h4>
                          <hr>
-                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                         wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                         eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                         assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                         nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                         farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                         labore sustainable.
+                         <div data-aos="fade-up" data-aos-duration="1800">
+                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                             wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                             eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                             assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                             nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                             farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                             labore sustainable.
+                         </div>
                      </div>
 
                      <div id="collapseFive5" class="collapse" aria-labelledby="headingFive5" data-parent="#accordionExample275">
-                         <h4>Clinique mobile</h4>
+                         <h4 data-aos="fade-up" data-aos-duration="1500">Clinique mobile</h4>
                          <hr>
-                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                         wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                         eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                         assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                         nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                         farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                         labore sustainable.
+                         <div data-aos="fade-up" data-aos-duration="1800">
+                             Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                             wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                             eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                             assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                             nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                             farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                             labore sustainable.
+                         </div>
                      </div>
                  </div>
              </div>
          </div>
 
          <!-- Footer -->
-         <footer class="page-footer font-small bg-dark">
+         <footer class="page-footer font-small teal darken-1" data-aos="fade-up" data-aos-duration="1000">
 
              <!-- Footer Elements -->
              <div class="container">
@@ -300,7 +321,13 @@
          <script src="js/lightbox.min.js"></script>
          <script src="js/bootstrap.min.js"></script>
          <script src="js/mdb.min.js"></script>
+         <script src="js/aos.js"></script>
          <script src="js/main.js"></script>
+         <script>
+             // Animations init
+             AOS.init();
+
+         </script>
 
      </body>
 

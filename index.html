@@ -13,12 +13,12 @@
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="apple-touch-icon" href="">
 
-    <link rel="stylesheet" href="css/hver.css">
-    <link rel="stylesheet" href="css/alerts.css">
-    <link rel="stylesheet" href="css/icono.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Teko|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mdb.min.css">
+
+    <link rel="stylesheet" href="css/aos.css">
     <!-- Link to your css file -->
     <link rel="stylesheet" href="css/main.css">
 
@@ -27,22 +27,15 @@
 <body>
     <!-- Start coding here -->
 
-    <!--
-    <header id="entete" class="navbar scrolling-navbar sticky-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 py-5"> </div>
-            </div>
-        </div>
-    </header>
-    -->
-
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark scrolling-navbar fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-md teal lighten-4 scrolling-navbar fixed-top" id="navbar" data-aos="fade-down" data-aos-duration="1000">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Nousejen</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/NOUSEJEN.png" alt="Logo NOUSEJEN" height="50">
+                NOUSEJEN
+            </a>
+            <button class="navbar-toggler miMenu" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -56,7 +49,7 @@
                         <a class="nav-link" href="activites.html">Activités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">A propos</a>
+                        <a class="nav-link" href="a-propos.html">A propos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -67,14 +60,29 @@
     </nav>
 
     <!-- Contenu -->
-    <div class="container customPadding mb-3">
+    <div class="container-fluid img-inicio customPadding mt-md-2 px-0" data-aos="fade-down" data-aos-duration="2000">
+        <div class="titulo-inicio">
+            <div class="inicio-contenido">
+                <div class="container">
+                    <h1 data-aos="fade-up" data-aos-duration="2500">Nousejen</h1>
+                    <p data-aos="fade-up" data-aos-duration="2800">Une autre vision pour une autre jeunesse!</p>
+                    <a class="btn btn-teal btn-md" href="#inicio" data-aos="fade-up" data-aos-duration="3000">
+                        <i class="fas fa-arrow-down fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container pt-5 mb-3" id="inicio" data-aos="fade-up" data-aos-duration="1000">
 
         <div class="row my-4">
 
             <!-- Principal -->
             <div class="col-md-9 my-3">
                 <div class="row text-center pb-md-5 mb-5 mb-md-0">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
                         <!-- Card -->
                         <div class="card card-image" id="ima1">
 
@@ -89,7 +97,7 @@
                         </div>
                         <!-- Card -->
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1500">
                         <!-- Card -->
                         <div class="card card-image" id="ima2">
 
@@ -104,7 +112,7 @@
                         </div>
                         <!-- Card -->
                     </div>
-                    <div class="col-md-4 mb-3">
+                    <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="2000">
                         <!-- Card -->
                         <div class="card card-image" id="ima3">
 
@@ -122,7 +130,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-up" data-aos-duration="1500">
                         <video class="video-fluid z-depth-1" autoplay loop controls muted>
                             <source src="https://mdbootstrap.com/img/video/Sail-Away.mp4" type="video/mp4" />
                         </video>
@@ -133,16 +141,16 @@
             </div>
 
             <!-- Sidebar -->
-            <div class="col-md-3 d-none grey d-md-block lighten-3 text-center my-3 pb-5">
-                <div class="mt-4 px-2" id="j">
+            <div class="col-md-3 d-none d-md-block teal lighten-5 text-center my-3 pb-5" id="sidebar">
+                <div class="mt-4 px-2">
                     <h4 class="pt-2">Actualités</h4>
                     <hr>
                     <ul class="nav flex-column">
-                        <a class="nav-link active" href="#">Nousejen Prefac</a>
-                        <a class="nav-link" href="#">Nousejeni</a>
-                        <a class="nav-link" href="#">Kreyololo</a>
-                        <a class="nav-link" href="#">Coin des jeunes</a>
-                        <a class="nav-link" href="#">Clinique mobile</a>
+                        <a class="nav-link mb-1" href="activites.html#">Nousejen Prefac</a>
+                        <a class="nav-link mb-1" href="activites.html">Nousejeni</a>
+                        <a class="nav-link mb-1" href="activites.html">Kreyololo</a>
+                        <a class="nav-link mb-1" href="activites.html">Coin des jeunes</a>
+                        <a class="nav-link mb-1" href="activites.html">Clinique mobile</a>
                     </ul>
                 </div>
             </div>
@@ -151,7 +159,7 @@
 
     </div>
 
-    <div id="carousel" class="carousel slide" data-ride="carousel">
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-aos="fade-up" data-aos-duration="1000">
         <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
@@ -228,7 +236,7 @@
 
 
     <!-- Footer -->
-    <footer class="page-footer font-small bg-dark">
+    <footer class="page-footer font-small teal darken-1" data-aos="fade-up" data-aos-duration="1000">
 
         <!-- Footer Elements -->
         <div class="container">
@@ -241,19 +249,19 @@
                     <div class="mb-5 flex-center">
 
                         <!-- Facebook -->
-                        <a class="fb-ic">
+                        <a class="fb-ic" target="_blank" href="https://www.facebook.com/Nousejen-1833956213572851/">
                             <i class="fab fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                         <!-- Twitter -->
-                        <a class="tw-ic">
+                        <a class="tw-ic" href="">
                             <i class="fab fa-twitter fa-lg mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                         <!--Linkedin -->
-                        <a class="li-ic">
+                        <a class="li-ic" href="">
                             <i class="fab fa-linkedin-in fa-lg mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                         <!--Instagram-->
-                        <a class="ins-ic">
+                        <a class="ins-ic" target="_blank" href="https://instagram.com/nousejen_haiti?igshid=i5o4znb25lpi">
                             <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                     </div>
@@ -268,7 +276,7 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
-            <span class="text-white"><a href="index.html">NOUSEJEN</a></span>, une autre vision pour une autre jeunesse!
+            <span class="text-white"><a href="a-propos.html">NOUSEJEN</a></span>, une autre vision pour une autre jeunesse!
             <br>© 2017-2019, NOUSEJEN. All rights reserved
         </div>
         <!-- Copyright -->
@@ -283,7 +291,10 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mdb.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
-</body>
-
-</html>
+    <script>
+        // Animations init
+        AOS.init();
+    </script>
+</body></html>
