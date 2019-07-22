@@ -142,10 +142,9 @@ footer span a:hover {
 /*Accueil*/
 .img-inicio {
     height: 85vh;
-    background: url('../images/alternative-energy-background-blue-1036936.jpg') center no-repeat;
+    background: url('../images/1.jpeg') center no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    animation: myColorAnimation 2s infinite;
 }
 
 .titulo-inicio {
@@ -154,7 +153,7 @@ footer span a:hover {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: rgba(0, 0, 0, .5);
+    /*    background: rgba(0, 0, 0, .3);*/
 }
 
 .inicio-contenido {
@@ -164,10 +163,15 @@ footer span a:hover {
 
 .inicio-contenido h1 {
     font-size: 3rem;
+    background: black;
+    display: inline-block;
+    padding: 2px 5px;
 }
 
 .inicio-contenido p {
     font-size: 1.5rem;
+    background: black;
+    padding: 2px;
 }
 
 #ima1 {
@@ -211,31 +215,91 @@ footer span a:hover {
 }
 
 #carousel .carousel-inner {
-    height: 60vh;
+    min-height: 60vh;
 }
 
-#environnement {
-    background: url('../images/art-background-blank-1020317.jpg') no-repeat;
+#actu1 {
+    background: url('../images/art-background-blank-1020317.jpg') center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
-    height: 100%;
+    min-height: 60vh;
 }
 
-#sport {
-    background: url('../images/active-activity-athletes-1667583.jpg') no-repeat;
+#actu1 h1 {
+    animation: animate .5s linear infinite;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+#actu1 h2 {
+    border-top: 5px solid #fff;
+    padding-top: 3rem;
+}
+
+#actu1 img{
+    animation: animate2 .2s linear infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        text-shadow: -2.5px -2.5px 0 #0ff, 2.5px 2.5px 0 #0ff;
+    }
+
+    85% {
+        text-shadow: 2.5px 2.5px 0 #f00, -2.5px -2.5px 0 #f0c;
+    }
+
+}
+@keyframes animate2 {
+
+    0%
+    {
+        box-shadow: -5px -5px 0 #fc3, 5px 5px 0 #fc3;
+    }
+
+    100% {
+        box-shadow: 5px 5px 0 #f00, -5px -5px 0 #f0c;
+    }
+
+}
+
+#actu2 {
+    background: url('../images/actuu.jpg') center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
-    height: 100%;
+    min-height: 60vh;
 }
+#actu2 h1 {
+    animation: animate3 .9s linear infinite;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+#actu2 p{
+    background: rgba(0,0,0,.7);
+    padding: 10px;
+}
+@keyframes animate3 {
 
-#education {
-    background: url('../images/art-art-materials-background-1762851.jpg') center center no-repeat;
+    0%,
+    100% {
+        text-shadow: -2.5px -2.5px 0 #fff, 2.5px 2.5px 0 #fff;
+    }
+
+    85% {
+        text-shadow: 2.5px 2.5px 0 #fff, -2.5px -2.5px 0 #fff;
+    }
+
+}
+#actu3 {
+    background: url('../images/art-art-materials-background-1762851.jpg') center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
-    height: 100%;
+    min-height: 60vh;
 }
 
 
@@ -374,11 +438,11 @@ footer span a:hover {
 
 .myBox {
     position: relative;
-    height: 500px;
+    min-height: 500px;
     background: #060c21;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*    align-items: center;*/
     border: 1px solid #cdcd;
     box-shadow: 1px 1px 20px #060c21;
     transition: .9s ease-in-out;
@@ -426,8 +490,8 @@ footer span a:hover {
 
 .myContent h2 {
     position: absolute;
-    top: -10%;
-    left: 50%;
+    top: 50%;
+    left: 35%;
     margin: 0;
     font-size: 10rem;
     color: rgba(250, 250, 250, .5);
@@ -435,7 +499,7 @@ footer span a:hover {
 }
 
 .myBox:hover .myContent h2 {
-    top: -20%;
+    top: 10%;
 }
 
 .myBox .myContent h3 {
@@ -483,149 +547,45 @@ footer span a:hover {
     color: #fc3;
 }
 
-#team h2 {
+#ourTeam h2 {
     color: #00695c;
-}
-
-.myCard {
-    height: 230px;
-    width: 100%;
-    transform-style: preserve-3d;
-    perspective: 800px;
-    transition: .5s;
-}
-
-.myCard:hover {
-    cursor: pointer;
-}
-
-.myCard .frontCard {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    backface-visibility: hidden;
-    transform: rotateY(0deg);
-    transition: .5s;
-}
-
-.myCard .frontCard img {
-    width: 100%;
-    height: 100%;
-}
-
-.myCard:hover .frontCard {
-    transform: rotateY(-180deg);
-}
-
-.myCard .backCard {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
-    transition: .5s;
-}
-
-.myCard .backCard::before {
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, .1);
-}
-
-.myCard:hover .backCard {
-    transform: rotateY(0deg);
-}
-
-.myCard .backCard .details {
-    position: absolute;
     text-align: center;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    box-sizing: border-box;
-    padding: 20px;
 }
 
-.myCard .backCard .details h5 {
-    color: white;
+#ourTeam .view {
+    height: 100%;
 }
 
-.myCard .backCard .details h5 span {
-    color: #80cbc4;
+#ourTeam h4 {
+    color: #00695c;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
-    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    padding: 0 10px;
 }
 
-.myCard .backCard .details .reseauxSociaux {
-    padding: 10px 0;
-    font-size: .6rem;
+#ourTeam .mask {
+    margin: auto 0;
 }
 
-.myCard .backCard .details .reseauxSociaux a {
-    background: #80cbc4;
-    display: inline-block;
-    padding: 10px;
+#ourTeam p {
+    color: #fff;
+    font-weight: lighter;
+    font-size: .9rem;
+    text-align: center;
 }
 
-.myCard .backCard .details .reseauxSociaux a:hover {
-    background: #fff;
+#ourTeam .img-thumbnail {
+    padding: .25rem;
+    background-color: #b2dfdb !important;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
 }
 
-
-
-
-/*Keyframes*/
-@keyframes myColorAnimation {
-
-    0%,
-    100% {
-        filter: hue-rotate(0deg);
-    }
-
-    50% {
-        filter: hue-rotate(360deg);
-    }
-}
-
-@keyframes borderAnimation {
-    0% {
-        border-bottom: 1px solid #ff0057;
-        left: 0px;
-        top: 0px;
-    }
-
-    40% {
-        border-right: 1px solid #e64a19;
-        padding-left: 5px;
-        border-radius: 1rem;
-        left: 200px;
-        top: 0px;
-    }
-
-    70% {
-        border-top: 1px solid #e91e63;
-        padding-left: 10px;
-        border-radius: 2rem;
-        left: 200px;
-        top: 200px;
-    }
-
-    100% {
-        border-radius: 5rem;
-        padding-left: 15px;
-        border: 1px solid #e91e63;
-        left: 0px;
-        top: 0px;
-    }
+#ourTeam .bgGradient {
+    background: rgb(178, 223, 219);
+    background: linear-gradient(180deg, rgba(178, 223, 219, 0.9) 0%, rgba(137, 193, 185, 0.8) 30%, rgba(77, 148, 135, 0.8) 80%, rgba(0, 105, 86, 0.9) 100%);
 }
 
 
@@ -634,9 +594,28 @@ footer span a:hover {
 
 
 /*Media queries*/
+@media (max-width: 1024px) {
+    .col-md-6.miColumna {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .myBox {
+        position: relative;
+        min-height: auto;
+        background: #060c21;
+        display: flex;
+        justify-content: center;
+        /*    align-items: center;*/
+        border: 1px solid #cdcd;
+        box-shadow: 1px 1px 20px #060c21;
+        transition: .9s ease-in-out;
+    }
+}
+
 @media (max-width: 768px) {
     .img-inicio {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     #carousel h2 {
@@ -646,8 +625,14 @@ footer span a:hover {
     }
 
     #carousel .carousel-inner {
-        height: 100vh;
+        min-height: 60vh;
         text-align: center;
+    }
+
+    #actu1,
+    #actu2,
+    #actu3 {
+        min-height: 60vh;
     }
 
     .myContent h2 {
@@ -660,7 +645,33 @@ footer span a:hover {
         transition: .5s;
     }
 
+    .myBox {
+        position: relative;
+        min-height: 500px;
+        width: 95%;
+        background: #060c21;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #cdcd;
+        box-shadow: 1px 1px 20px #060c21;
+        transition: .9s ease-in-out;
+    }
+
     .myBox:hover .myContent h2 {
         top: -10%;
     }
+
+    #ourTeam h4 {
+        margin-top: 25%;
+        font-size: 10px;
+        padding: 0 1px;
+    }
+
+    #ourTeam p {
+        font-size: 8px;
+    }
+}
+
+
 }
